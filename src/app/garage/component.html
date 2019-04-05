@@ -18,3 +18,13 @@
               <span *ngIf="!allowEdit[i]">{{ car.make }}</span>
               <span *ngIf="allowEdit[i]"><input type="text" class="form-control" name="make" aria-label="Small" placeholder="Enter the car's make" [(ngModel)]="car.make" required></span>
           </td>
+          <td>
+              <span *ngIf="!allowEdit[i]">{{ car.model }}</span>
+              <span *ngIf="allowEdit[i]"><input type="text" class="form-control" name="model" aria-label="Small" placeholder="Enter the car's model" [(ngModel)]="car.model" required></span>
+          </td>
+          <td>{{ car.parkDate | date:'L/dd/yyyy, h:mm a'}}</td>
+          <td>
+              <span *ngIf="!allowEdit[i]"><button class="btn btn-primary" (click)="editThisCar(i)">Edit</button></span>
+              <span *ngIf="allowEdit[i]"><button class="btn btn-primary" (click)="saveCar(i, car)">Save</button></span>
+          </td>
+          <td>
