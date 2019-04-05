@@ -28,3 +28,7 @@
               <span *ngIf="allowEdit[i]"><button class="btn btn-primary" (click)="saveCar(i, car)">Save</button></span>
           </td>
           <td>
+
+            <span *ngIf="!allowEdit[i]"><button class="btn btn-secondary" (click)="removeThisCar(car)">Remove</button></span>
+                  </td>
+              </tr>
