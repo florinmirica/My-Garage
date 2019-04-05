@@ -40,3 +40,14 @@ export class GarageComponent implements OnInit {
 		this.allowEdit[i] = true;
 		this.updateEvent.emit();
 	}
+
+  async saveCar(i, car: CarObject) {
+		if (car.license && car.make && car.model) {
+			this.allowEdit[i] = false;
+			this.cars = await this.garageApi.editCar{car.id}`,
+				car
+			);
+			this.updateEvent.emit();
+		}
+	}
+}
