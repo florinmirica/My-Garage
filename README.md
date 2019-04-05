@@ -1,4 +1,6 @@
-# MyGarage
+# _My Garage_
+#### By _**Florin Mirica**_
+GitHub link:
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
 
@@ -6,6 +8,9 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 This is a small app developed in Angular that lets the user to add cars to his garage, adding details about each car. You can add or edit/delete cars from the garage.
 
+## Clone this repository
+
+https://github.com/florinmirica/My-Garage.git
 
 ## Development server
 
@@ -30,3 +35,18 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+## Known bugs
+
+No known bugs
+
+## Support and contact details
+
+miricaflorin@hotmail.com
+
+## Language used:
+
+HTML, JavaScript, Angular.
+
+Copyright (c) 2019 Florin Mirica
