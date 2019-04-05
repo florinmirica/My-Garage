@@ -1,6 +1,6 @@
 # _My Garage_
 #### By _**Florin Mirica**_
-GitHub link:
+GitHub link: https://github.com/florinmirica/My-Garage.git
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
 
@@ -10,7 +10,7 @@ This is a small app developed in Angular that lets the user to add cars to his g
 
 ## Clone this repository
 
-https://github.com/florinmirica/My-Garage.git
+Run git clone https://github.com/florinmirica/My-Garage.git
 
 ## Development server
 
