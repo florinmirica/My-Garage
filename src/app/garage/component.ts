@@ -22,11 +22,21 @@ export class GarageComponent implements OnInit {
 
 	allowEdit: boolean[] = [];
 
-	constructor(private garageApi: GarageApi) {}
+	constructor(private GarageComponent) {}
 
 	ngOnInit() {
 		this.allowEdit = new Array(this.cars.length);
 		for (let i: number = 0; i < this.cars.length; i++) {
 			this.allowEdit[i] = false;
 		}
+	}
+  async removeThisCar(car: CarObject) {
+		this.cars = await this.garageApi.removeCar({car.id}`
+		);
+		this.updateEvent.emit();
+	}
+
+	editThisCar(i: number) {
+		this.allowEdit[i] = true;
+		this.updateEvent.emit();
 	}
