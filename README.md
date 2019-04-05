@@ -2,6 +2,11 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
 
+# Specifications
+
+This is a small app developed in Angular that lets the user to add cars to his garage, adding details about each car. You can add or edit/delete cars from the garage.
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
