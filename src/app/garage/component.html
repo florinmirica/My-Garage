@@ -9,3 +9,12 @@
             <th scope="col">Edit</th>
             <th scope="col">Remove</th>
         </tr>
+        <tr *ngFor="let car of cars; let i = index">
+          <td>
+              <span *ngIf="!allowEdit[i]">{{ car.license }}</span>
+              <span *ngIf="allowEdit[i]"><input type="text" class="form-control" name="license" aria-label="Small" placeholder="Enter the car's license plate number" [(ngModel)]="car.license" required></span>
+          </td>
+          <td>
+              <span *ngIf="!allowEdit[i]">{{ car.make }}</span>
+              <span *ngIf="allowEdit[i]"><input type="text" class="form-control" name="make" aria-label="Small" placeholder="Enter the car's make" [(ngModel)]="car.make" required></span>
+          </td>
