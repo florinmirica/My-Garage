@@ -1,0 +1,10 @@
+<div class="container">
+  <ng-container *ngIf="!categoryIsValid">
+    <h2>404 Error - invalid path name (category doesn't exist)</h2>
+  </ng-container>
+  <ng-container *ngIf="categoryIsValid">
+    <h2>Book category: {{category['name']}}</h2>
+    <p>Explore books from specific category.</p>
+    <app-book-pos [booksList]="booksList"></app-book-pos>
+  </ng-container>
+</div>

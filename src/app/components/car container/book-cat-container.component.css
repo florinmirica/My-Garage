@@ -1,0 +1,109 @@
+.booksContainer {
+  border-top: 1px solid lightgray;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0;
+  position: relative;
+}
+
+h2 {
+  margin-bottom: 5px;
+  transition: 0.5s;
+}
+
+h2:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  font-size: 25px;
+}
+
+.changePicButton {
+  font-size: 45px;
+  cursor: pointer;
+  transition: 0.5s;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 5px 10px;
+  border-radius: 5px;
+  position: absolute;
+}
+
+.changePicButton:hover {
+  color: white;
+  background-color: cornflowerblue;
+  border: 1px solid rgb(195, 195, 195);
+}
+
+.bttnLeft {
+  top: 50%;
+  transform: translateY(-50%);
+  left: 3px;
+  z-index: 4;
+}
+
+.bttnRight {
+  top: 50%;
+  transform: translateY(-50%);
+  right: 3px;
+}
+.listContainer {
+  flex-grow: 1;
+  overflow: hidden;
+  margin: 0 3px;
+}
+
+.booksList {
+  list-style-type: none;
+  margin: 0 10px;
+  height: 270px;
+  position: relative;
+  transition: 0.5s;
+
+}
+
+.bookPosition {
+  float: left;
+  height: 100%;
+  padding: 5px 10px;
+  width: 160px;
+  cursor: pointer;
+  transition: 0.5s;
+  border-radius: 5px;
+  background-color: rgb(241, 241, 241);
+  border: 1px solid rgb(226, 226, 226);
+  position: relative;
+}
+
+.bookPosition:hover {
+  background-color: cornflowerblue;
+  border: 1px solid lightblue;
+  padding: 7px 12px;
+}
+
+.bookPosImage {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+  object-position: 50% 50%;
+  box-shadow: 3px 3px 5px 0 rgba(125, 125, 125, 1);
+}
+
+.bookOnList {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  border: 1px solid white;
+}
+
+.bookPosTitle {
+  text-align: center;
+  margin: 3px;
+  font-weight: bold;
+}
+
+.bookPosAuthor {
+  text-align: center;
+  font-style: italic;
+}

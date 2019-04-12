@@ -1,0 +1,33 @@
+.sideMenu {
+  width: 250px;
+  background: rgba(241, 241, 241, 0.9);
+  border-right: 1px solid cornflowerblue;
+  height: 100vh;
+  transition: 0.5s;
+  overflow: auto;
+}
+
+h2 {
+  background-color: cornflowerblue;
+  color: white;
+  padding-left: 10px;
+  padding-top: 51px;
+  border-bottom: 1px solid grey;
+}
+
+ul {
+  margin-top: 15px;
+}
+
+li {
+  font-size: 20px;
+  transition: 0.5s;
+  padding: 10px 10px;
+}
+
+li:hover {
+  padding-left: 20px;
+  background-color: cornflowerblue;
+  color: white;
+  cursor: pointer;
+}

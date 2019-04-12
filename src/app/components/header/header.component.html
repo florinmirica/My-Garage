@@ -1,0 +1,36 @@
+<header>
+  <div class="container">
+    <div class="headerContainer">
+      <div class="titleAndMenuBttn">
+        <img
+          class="toggleMenu"
+          src="assets/images/menu_toggle.png"
+          height="32" width="50"
+          (click)="toggleMenuState()"
+        />
+        <h1>BOOKSBASE</h1>
+        <p *ngIf="authService.user">Welcome {{authService.user.email}}</p>
+      </div>
+      <ul>
+        <li>
+          <a routerLink="books" (click)="resetBookEdit()" routerLinkActive="active">Explore</a>
+        </li>
+        <li *ngIf="authService.user">
+          <a routerLink="readlist" (click)="resetBookEdit()" routerLinkActive="active">Reading list</a>
+        </li>
+        <li *ngIf="authService.user">
+          <a routerLink="userbooks" (click)="resetBookEdit()" routerLinkActive="active">My books</a>
+        </li>
+        <li *ngIf="authService.user">
+          <a routerLink="addbook" (click)="resetBookEdit()" routerLinkActive="active">Add book</a>
+        </li>
+        <li *ngIf="!authService.user">
+          <a routerLink="login" routerLinkActive="active">Log in/Register</a>
+        </li>
+        <li *ngIf="authService.user">
+          <a (click)="logOut()">Log out</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>

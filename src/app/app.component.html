@@ -1,0 +1,16 @@
+<app-header (menuVisState)="menuStateChanged($event)"></app-header>
+<router-outlet></router-outlet>
+<app-category-menu
+  class="sideMenu"
+  [style.left]="menuPos + 'px'"
+  (window:resize)="onResize()"
+  (menuVisState)="menuStateChanged($event)"
+>
+</app-category-menu>
+<div
+  *ngIf="menuVisible"
+  (click)="menuVisible=false; menuPos=-300"
+  class="greyBackground"
+>
+</div>
+<app-footer></app-footer>

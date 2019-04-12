@@ -1,0 +1,169 @@
+.singleBookContainer {
+  display: flex;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+p {
+  font-size: 20px;
+}
+
+.photoColumn {
+  width: 300px;
+  padding: 10px;
+  border-right: 1px solid lightgray;
+  position: relative;
+}
+
+.descriptionColumn {
+  padding: 10px;
+  flex-grow: 1;
+}
+
+@media ( max-width: 830px ) {
+  .singleBookContainer {
+    flex-direction: column;
+  }
+
+  .photoColumn {
+    width: 100%;
+    text-align: center;
+    border: none;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  .bookAuthor {
+    text-align: center;
+  }
+
+  .bookCategory {
+    text-align: center;
+  }
+
+  .bookOnList {
+    left: 50%;
+    transform: translateX( 360% );
+  }
+}
+
+.bookImage {
+  display: block;
+  width: 280px;
+  height: 420px;
+  margin: 0 auto;
+  object-fit: cover;
+  object-position: 50% 50%;
+  border: 1px solid lightgray;
+  box-shadow: 3px 3px 5px 0 rgba(125, 125, 125, 1);
+}
+
+.bookOnList {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 11px;
+  right: 11px;
+}
+
+.addToRead {
+  display: block;
+  margin: 15px auto 20px auto;
+  width: 280px;
+  padding: 10px;
+  background-color: cornflowerblue;
+  color: white;
+  border: transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 1px;
+  transition: 0.5s;
+}
+
+.addToRead:hover {
+  background-color: blue;
+  font-size: 20px;
+}
+
+.addToRead:disabled {
+  background-color: lightgray;
+  font-size: 18px;
+  cursor: default;
+}
+
+.deleteBttn {
+  background: crimson;
+}
+
+.deleteBttn:hover {
+  background: crimson;
+}
+
+.columnTitlePos {
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+.bookAuthor {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.bookDescHeader {
+  margin: 10px 0;
+  font-weight: bold;
+  border-top: 1px solid lightgray;
+  padding: 5px 0;
+  font-size: 25px;
+}
+
+.bookDescMain {
+  font-family: 'Krub', sans-serif;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.bookDescDetail {
+  font-family: 'Krub', sans-serif;
+  margin-bottom: 10px;
+}
+
+.manageBook {
+  border: 1px solid grey;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgb(241, 241, 241);
+  text-align: center;
+}
+
+.manageBttn {
+  width: 100%;
+}
+
+.deletePopup {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.deleteWindow {
+  border: 1px solid black;
+  padding: 20px;
+  background: lightgray;
+}
